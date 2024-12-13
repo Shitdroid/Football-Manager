@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlayerListController">
+   <children>
+      <Pane prefHeight="45.0" prefWidth="314.0" style="-fx-background-color: rgb(50,50,50);">
+         <children>
+            <Label layoutX="80.0" layoutY="7.0" text="Search Results" textFill="#e1e1e1">
+               <font>
+                  <Font name="Impact" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="314.0">
+         <children>
+            <Label fx:id="name" alignment="TOP_CENTER" layoutX="-4.0" layoutY="27.0" prefHeight="60.0" prefWidth="313.0" text="Label" textAlignment="CENTER" textFill="#d2d2d2" wrapText="true" AnchorPane.leftAnchor="-4.0" AnchorPane.topAnchor="27.0">
+               <font>
+                  <Font name="Impact" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="124.0" text="Age: " textFill="#d2d2d2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="country" layoutX="154.0" layoutY="97.0" text="Label" textFill="#d2d2d2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="age" layoutX="154.0" layoutY="124.0" text="Label" textFill="#d2d2d2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="height" layoutX="159.0" layoutY="151.0" text="Label" textFill="#d2d2d2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="club" layoutX="159.0" layoutY="177.0" text="Label" textFill="#d2d2d2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="position" layoutX="159.0" layoutY="202.0" text="Label" textFill="#d2d2d2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="number" layoutX="159.0" layoutY="229.0" text="Label" textFill="#d2d2d2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="256.0" text="Salary:" textFill="#d2d2d2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="97.0" layoutY="229.0" text="Number:" textFill="#d2d2d2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="98.0" layoutY="202.0" text="Poistion:" textFill="#d2d2d2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="121.0" layoutY="177.0" text="Club: " textFill="#d2d2d2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="151.0" text="Height: " textFill="#d2d2d2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="94.0" layoutY="97.0" text="Country:" textFill="#d2d2d2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="salary" layoutX="158.0" layoutY="256.0" text="Label" textFill="#d2d2d2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="prev" layoutX="14.0" layoutY="314.0" mnemonicParsing="false" onAction="#clickPrevious" prefHeight="26.0" prefWidth="80.0" text="&lt;&lt;Previous" />
+            <Button fx:id="close" layoutX="134.0" layoutY="314.0" mnemonicParsing="false" onAction="#clickClose" prefHeight="26.0" text="Close" />
+            <Button fx:id="next" layoutX="219.0" layoutY="314.0" mnemonicParsing="false" onAction="#clickNext" prefHeight="26.0" prefWidth="80.0" text="Next&gt;&gt;" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,39 @@
+
+/**Customization of The Bar where the buttons are located**/
+.dialog-pane > .button-bar > .container {
+    -fx-background-color:rgb(80,80,80);
+}
+
+.dialog-pane > .content.label {
+    -fx-background-color: rgb(80,80,80);
+    -fx-text-fill:rgb(215,215,215);
+    -fx-font-size:15;
+    -fx-alignment: Center-left;
+}
+
+/**Customization of DialogPane Header**/
+.dialog-pane:header .header-panel {
+    -fx-background: rgb(40,40,40);
+}
+
+.dialog-pane: header .header-panel .label{
+    -fx-background-color: transparent;
+    -fx-text-fill:rgb(225,225,225);
+    -fx-font-size:20;
+    -fx-font-family: 'Impact';
+}
+
+.dialog-pane .button{
+    -fx-border-width: 0.5 0.5 0.5 0.5;
+    -fx-border-color: rgb(50,50,50);
+    -fx-text-fill:rgb(225,225,225);
+    -fx-background-color:rgb(60,60,60);
+}
+
+.dialog-pane .button:hover{
+    -fx-border-color:dodgerblue;
+    -fx-border-width: 1 1 1 1;
+    -fx-scale-x: 1.025;
+    -fx-scale-y: 1.025;
+    -fx-scale-z: 1.025;
+}

@@ -1,0 +1,6 @@
+Manchester United,red_devils,120000000,src/server/United.png
+Manchester City,the_citizens,300000000,src/Server/City.png
+Chelsea,the_pensioners,250000000,src/Server/Chelsea.png
+Liverpool,you_will_never_walk_alone,70000000,src/Server/Liverpool.png
+Arsenal,the_gunners,25000000,src/Server/Arsenal.png
+Tottenham Hotspur,the_lilywhites,90000000,src/Server/Spurs.png

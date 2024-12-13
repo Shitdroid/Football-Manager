@@ -1,0 +1,35 @@
+.button:hover{
+    -fx-background-color:linear-gradient(to right, #963cff, #ff2882);
+}
+
+.button{
+    -fx-text-fill:rgb(225,225,225);
+    -fx-background-color:#38003c;
+}
+
+.text-field{
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #38003c;
+    -fx-border-width: 0 0 2 0;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+    -fx-text-fill: rgb(215,215,215);
+    -fx-font-family: 'Arial Rounded MT Bold';
+    -fx-font-weight: bold;
+}
+
+.password-field{
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #38003c;
+    -fx-border-width: 0 0 2 0;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+    -fx-text-fill: rgb(215,215,215);
+    -fx-font-family: 'Arial Rounded MT Bold';
+    -fx-font-weight: bold;
+}
+
+.text-field:focused {
+    -fx-border-color: linear-gradient(to right, #963cff, #ff2882);;
+    -fx-border-width: 0 0 3 0;
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="544.0" prefWidth="346.0" style="-fx-background-color: rgb(80,80,80);" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddPlayerController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c3c3c" height="59.0" stroke="#505050" strokeType="INSIDE" strokeWidth="0.5" width="345.0" />
+      <Label layoutX="95.0" layoutY="14.0" text="Add New Player" textFill="#e6e6e6">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="87.0" text="Name:" textFill="GAINSBORO" AnchorPane.rightAnchor="233.0" AnchorPane.topAnchor="87.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="287.0" text="Club:" textFill="GAINSBORO" AnchorPane.rightAnchor="233.0" AnchorPane.topAnchor="287.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="387.0" text="Number:" textFill="GAINSBORO" AnchorPane.rightAnchor="232.6" AnchorPane.topAnchor="387.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="337.0" text="Position:" textFill="GAINSBORO" AnchorPane.rightAnchor="232.4" AnchorPane.topAnchor="337.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="187.0" text="Age:" textFill="GAINSBORO" AnchorPane.rightAnchor="233.0" AnchorPane.topAnchor="187.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="61.0" layoutY="137.0" text="Country:" textFill="GAINSBORO" AnchorPane.rightAnchor="232.2" AnchorPane.topAnchor="137.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="237.0" text="Height(m):" textFill="GAINSBORO" AnchorPane.rightAnchor="232.4" AnchorPane.topAnchor="237.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="437.0" text="Weeky Salary:" textFill="GAINSBORO" AnchorPane.rightAnchor="232.6" AnchorPane.topAnchor="437.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameInput" layoutX="144.0" layoutY="84.0" onAction="#enterName" style="-fx-background-color: rgb(80,80,80);" />
+      <TextField fx:id="countryInput" layoutX="143.0" layoutY="134.0" onAction="#enterCountry" style="-fx-background-color: rgb(80,80,80);" />
+      <TextField fx:id="ageInput" layoutX="144.0" layoutY="186.0" onAction="#enterAge" style="-fx-background-color: rgb(80,80,80);" />
+      <TextField fx:id="heightInput" layoutX="143.0" layoutY="234.0" onAction="#enterHeight" style="-fx-background-color: rgb(80,80,80);" />
+      <TextField fx:id="numberInput" layoutX="143.0" layoutY="384.0" onAction="#enterNumber" style="-fx-background-color: rgb(80,80,80);" />
+      <TextField fx:id="salaryInput" layoutX="144.0" layoutY="434.0" onAction="#enterSalary" style="-fx-background-color: rgb(80,80,80);" />
+      <Label fx:id="errorAge" layoutX="145.0" layoutY="165.0" text="*Invalid Input" textFill="#ff6464" visible="false">
+         <font>
+            <Font size="9.5" />
+         </font>
+      </Label>
+      <Label fx:id="errorHeight" layoutX="145.0" layoutY="214.0" text="*Invalid Input" textFill="#ff6464" visible="false">
+         <font>
+            <Font size="9.5" />
+         </font>
+      </Label>
+      <Label fx:id="errorNumber" layoutX="145.0" layoutY="364.0" text="*Invalid Input" textFill="#ff6464" visible="false">
+         <font>
+            <Font size="9.5" />
+         </font>
+      </Label>
+      <Label fx:id="errorSalary" layoutX="145.0" layoutY="414.0" text="*Invalid Input" textFill="#ff6464" visible="false">
+         <font>
+            <Font size="9.5" />
+         </font>
+      </Label>
+      <Button fx:id="reset" layoutX="88.0" layoutY="488.0" mnemonicParsing="false" onAction="#clickReset" text="Reset" AnchorPane.leftAnchor="88.0" />
+      <Button fx:id="submit" layoutX="190.0" layoutY="488.0" mnemonicParsing="false" onAction="#clickSubmit" text="Submit" AnchorPane.rightAnchor="102.4" />
+      <Label fx:id="errorName" layoutX="145.0" layoutY="64.0" text="*Player Already Exists" textFill="#ff6464" visible="false">
+         <font>
+            <Font size="9.5" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="clubInput" layoutX="143.0" layoutY="284.0" prefWidth="150.0" style="-fx-background-color: rgb(80,80,80);" />
+      <ChoiceBox fx:id="positionInput" layoutX="143.0" layoutY="334.0" prefWidth="150.0" style="-fx-background-color: rgb(80,80,80);" />
+      <Label fx:id="errorClub" layoutX="145.0" layoutY="263.0" text="*Must be Selected" textFill="#ff6464" visible="false">
+         <font>
+            <Font size="9.5" />
+         </font>
+      </Label>
+      <Label fx:id="errorPosition" layoutX="145.0" layoutY="314.0" text="*Must be Selected" textFill="#ff6464" visible="false">
+         <font>
+            <Font size="9.5" />
+         </font>
+      </Label>
+      <Label fx:id="errorName1" layoutX="145.0" layoutY="64.0" text="*Required" textFill="#ff6464" visible="false">
+         <font>
+            <Font size="9.5" />
+         </font>
+      </Label>
+      <Label fx:id="errorCountry" layoutX="145.0" layoutY="114.0" text="*Required" textFill="#ff6464" visible="false">
+         <font>
+            <Font size="9.5" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

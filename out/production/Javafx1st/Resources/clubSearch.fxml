@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ClubSearchController">
+   <children>
+      <Pane prefHeight="54.0" prefWidth="490.0" style="-fx-background-color: rgb(60,60,60);">
+         <children>
+            <Label layoutX="141.0" layoutY="11.0" text="Search By Team Info" textFill="GAINSBORO">
+               <font>
+                  <Font name="Impact" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="490.0">
+          <children>
+              <Button fx:id="buttonRich" layoutX="6.0" layoutY="5.0" mnemonicParsing="false" onAction="#clickRich" prefHeight="110.0" prefWidth="236.0" />
+              <Button fx:id="buttonSenior" layoutX="247.0" layoutY="5.0" mnemonicParsing="false" onAction="#clickSenior" prefHeight="110.0" prefWidth="236.0" AnchorPane.leftAnchor="248.0" />
+              <Button fx:id="buttonTall" layoutX="6.0" layoutY="122.0" mnemonicParsing="false" onAction="#clickTall" prefHeight="110.0" prefWidth="236.0" />
+              <Button fx:id="buttonSalary" layoutX="246.0" layoutY="122.0" mnemonicParsing="false" onAction="#clickSalary" prefHeight="110.0" prefWidth="236.0" AnchorPane.leftAnchor="248.0" />
+              <Button fx:id="buttonBack" layoutX="7.0" layoutY="238.0" mnemonicParsing="false" onAction="#clickBack" prefHeight="58.0" prefWidth="474.0" />
+              <Text fill="#c8c8c8" layoutX="12.0" layoutY="44.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Most Paid Players" wrappingWidth="164.53948974609375">
+                  <font>
+                      <Font name="Impact" size="18.0" />
+                  </font>
+              </Text>
+              <Text fill="#c8c8c8" layoutX="14.0" layoutY="65.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Get list of players with the highest " />
+              <Text fill="#c8c8c8" layoutX="255.0" layoutY="44.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Senior Most Players" wrappingWidth="220.53948974609375">
+                  <font>
+                      <Font name="Impact" size="18.0" />
+                  </font>
+              </Text>
+              <Text fill="#c8c8c8" layoutX="257.0" layoutY="61.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Get list of players with the highest age." />
+              <Text fill="#c8c8c8" layoutX="12.0" layoutY="160.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Tallest Players" wrappingWidth="220.53948974609375">
+                  <font>
+                      <Font name="Impact" size="18.0" />
+                  </font>
+              </Text>
+              <Text fill="#c8c8c8" layoutX="254.0" layoutY="160.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Yearly Salary" wrappingWidth="220.53948974609375">
+                  <font>
+                      <Font name="Impact" size="18.0" />
+                  </font>
+              </Text>
+              <Text fill="#c8c8c8" layoutX="14.0" layoutY="177.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Get list of players with the maximum " />
+              <Text fill="#c8c8c8" layoutX="257.0" layoutY="176.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Get total yearly salary of a club " />
+              <Text fill="#c8c8c8" layoutX="176.0" layoutY="271.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Back To Main Menu" wrappingWidth="141.3394775390625">
+                  <font>
+                      <Font name="Impact" size="18.0" />
+                  </font>
+              </Text>
+            <Text fill="#c8c8c8" layoutX="17.0" layoutY="81.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="weekly salary." />
+            <Text fill="#c8c8c8" layoutX="17.0" layoutY="194.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="height" />
+          </children>
+      </AnchorPane>
+   </children>
+</VBox>
